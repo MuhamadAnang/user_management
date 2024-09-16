@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" /> 
+  </head>
+  <body>
+    <div class="container mt-5">
+        <h1>daftar pengguna</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(user => { %>
+                    <tr>
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                        <td><%= user.username %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <form action="/auth/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>

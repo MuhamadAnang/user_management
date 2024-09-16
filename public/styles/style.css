@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Menambahkan jarak antara elemen */
+    max-width: 400px; /* Menentukan lebar maksimum form */
+    margin: 0 auto; /* Memusatkan form */
+}
+
+label {
+    font-weight: bold; /* Menyediakan penekanan pada label */
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer; /* Menampilkan cursor pointer saat hover di button */
+}
